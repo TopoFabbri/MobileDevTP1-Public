@@ -57,7 +57,7 @@ public class Respawn : MonoBehaviour
 	
 	public void Respawnear()
 	{
-		GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
+		GetComponent<Rigidbody>().velocity = Vector3.zero;
 		
 		gameObject.GetComponent<CarController>().SetGiro(0f);
 
@@ -84,7 +84,7 @@ public class Respawn : MonoBehaviour
 	
 	public void Respawnear(Vector3 pos)
 	{
-		GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
+		GetComponent<Rigidbody>().velocity = Vector3.zero;
 		
 		gameObject.GetComponent<CarController>().SetGiro(0f);
 
@@ -95,7 +95,7 @@ public class Respawn : MonoBehaviour
 	
 	public void Respawnear(Vector3 pos, Vector3 dir)
 	{
-		GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
+		GetComponent<Rigidbody>().velocity = Vector3.zero;
 		
 		gameObject.GetComponent<CarController>().SetGiro(0f);
 
