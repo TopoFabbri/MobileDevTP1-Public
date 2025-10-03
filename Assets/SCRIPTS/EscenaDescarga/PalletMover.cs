@@ -13,7 +13,7 @@
     {
         switch (miInput) {
             case MoveType.WASD:
-                if (!Tenencia() && Desde.Tenencia() && InputManager.Instance.GetAxis("Giro1") < .8f)
+                if (!Tenencia() && Desde.Tenencia() && InputManager.Instance.GetAxis("Giro1") < -.8f)
                     PrimerPaso();
                 if (Tenencia() && InputManager.Instance.GetAxis("Vertical1") > .8f)
                     SegundoPaso();
@@ -22,7 +22,7 @@
                 break;
             
             case MoveType.Arrows:
-                if (!Tenencia() && Desde.Tenencia() && InputManager.Instance.GetAxis("Giro2") < .8f)
+                if (!Tenencia() && Desde.Tenencia() && InputManager.Instance.GetAxis("Giro2") < -.8f)
                     PrimerPaso();
                 if (Tenencia() && InputManager.Instance.GetAxis("Vertical2") > .8f)
                     SegundoPaso();
